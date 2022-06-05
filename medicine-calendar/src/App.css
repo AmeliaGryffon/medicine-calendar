@@ -52,13 +52,13 @@
   flex-direction: row;
   column-gap: 1vw;
   margin-top: 4%;
-  margin-left: 5%;
+  margin-left: 1vw;
 }
 
 .day-container {
   position: absolute;
   width: 6vw;
-  height: 12vh;
+  height: 6vw;
   background-color: white;
 }
 
@@ -81,5 +81,5 @@
 }
 
 .day-seperator{
-  height: 1vh;
+  height: 1%;
 }

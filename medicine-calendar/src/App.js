@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Week from './components/Week';
+import moment from 'moment'
 
 function App() {
   //data for the month
@@ -11,16 +12,21 @@ function App() {
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     for(let i = 0; i < days.length; i++){
 
+      if(moment().format() === moment().day(i).format()){
+        SetMissed(total)
+      }
+
       if (localStorage.getItem(`${days[i]}-morning`) !== 'true') {
         total += 1
       }
 
       if (localStorage.getItem(`${days[i]}-evening`) !== 'true') {
         total += 1
+        
       }
     }
 
-    SetMissed(total)
+
   }
   
   return (

@@ -4,8 +4,8 @@ function Sun() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100px"
-      height="100px"
+      width="15vw"
+      height="15vh"
       viewBox="0 0 200 200"
     >
       <g fill="#fed500" fillOpacity="0.739" stroke="white">
